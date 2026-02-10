@@ -6,15 +6,12 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	// "postCreateCommand": "if [ -n \"$GIT_AUTHOR_NAME\" ] && [ -n \"$GIT_AUTHOR_EMAIL\" ]; then git config --global user.name \"$GIT_AUTHOR_NAME\"; git config --global user.email \"$GIT_AUTHOR_EMAIL\"; fi",
 	// Increase inotify limits so VS Code reliably sees file changes inside the container.
 	// "runArgs": [
 	// 	"--sysctl",
@@ -22,18 +19,17 @@
 	// 	"--sysctl",
 	// 	"fs.inotify.max_user_instances=8192"
 	// ],
-
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"openai.chatgpt",
 				"redhat.vscode-yaml",
-				"mathematic.vscode-pdf"
+				"mathematic.vscode-pdf",
+				"ms-azuretools.vscode-containers"
 			]
 		}
-	},
-
+	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
