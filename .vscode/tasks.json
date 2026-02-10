@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RenderCV: Watch Resume",
+      "type": "shell",
+      "command": "rendercv render --watch Jesse_Black_Resume.yaml",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "RenderCV: Build Resume PDF",
+      "type": "shell",
+      "command": "rendercv render Jesse_Black_Resume.yaml; Copy-Item -Force \"rendercv_output\\Jesse_Black_Resume.pdf\" \"Jesse_Black_Resume.pdf\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
