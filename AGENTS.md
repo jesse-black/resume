@@ -10,6 +10,7 @@ This repository contains my resume built with RenderCV.
 - Prefer editing the YAML sources rather than any generated output.
 - Keep formatting consistent with existing YAML structure.
 - If you add new sections, follow the patterns already used in the YAML files.
+- Always check for existing files before creating or overwriting any file.
 
 ## Validation
 - Validate by rendering: `rendercv render Jesse_Black_Resume.yaml`.

@@ -15,6 +15,13 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	// Increase inotify limits so VS Code reliably sees file changes inside the container.
+	// "runArgs": [
+	// 	"--sysctl",
+	// 	"fs.inotify.max_user_watches=524288",
+	// 	"--sysctl",
+	// 	"fs.inotify.max_user_instances=8192"
+	// ],
 
 	// Configure tool-specific properties.
 	"customizations": {

@@ -4,9 +4,22 @@
     {
       "label": "RenderCV: Watch Resume",
       "type": "shell",
-      "command": "rendercv render --watch Jesse_Black_Resume.yaml",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "rendercv render --watch Jesse_Black_Resume.yaml"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
+      },
+      "windows": {
+        "command": "wsl.exe",
+        "args": [
+          "-e",
+          "bash",
+          "-lc",
+          "rendercv render --watch Jesse_Black_Resume.yaml"
+        ]
       },
       "isBackground": true,
       "problemMatcher": []
@@ -14,9 +27,26 @@
     {
       "label": "RenderCV: Build Resume PDF",
       "type": "shell",
-      "command": "rendercv render Jesse_Black_Resume.yaml; Copy-Item -Force \"rendercv_output\\Jesse_Black_Resume.pdf\" \"Jesse_Black_Resume.pdf\"",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_CV.pdf Jesse_Black_CV.pdf"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "windows": {
+        "command": "wsl.exe",
+        "args": [
+          "-e",
+          "bash",
+          "-lc",
+          "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_CV.pdf Jesse_Black_CV.pdf"
+        ]
       },
       "problemMatcher": []
     }
