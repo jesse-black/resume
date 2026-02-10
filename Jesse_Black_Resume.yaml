@@ -1,0 +1,243 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Jesse Black
+  headline: Staff Software Engineer
+  location: Chicago, IL
+  email: jesse.w.black@gmail.com
+  photo:
+  phone:
+  website:
+  social_networks:
+    - network: LinkedIn
+      username: jessewblack
+  custom_connections:
+  sections:
+    skills:
+      - label: Identity & Security
+        details: OAuth2, OpenID, Single Sign-On (SSO), Identity Provider (IdP), Identity and Access Management, Access Control Systems
+      - label: Cloud & Platform
+        details: Azure Cloud Platform (Event Hub/Kafka, Service Bus, Functions, Blob Storage), Amazon Web Services (Lambda, S3), Terraform, Docker, Microservices, Platform Integration, iPaaS Integration, App Marketplace
+      - label: APIs & Data
+        details: JSON REST API Architecture, Public Developer API, OpenAPI / Swagger API Documentation, Distributed Event Streaming
+      - label: Languages & Frameworks
+        details: C# .NET, SQL, Node.js, Java, Kotlin, Python, Typescript, Javascript, React, Vue, Micro Frontends (MFE), Sass, Tailwind
+      - label: Databases
+        details: MS SQL Server, SQLite, Redis
+      - label: Methodology
+        details: Agile Development, Test Driven Development, Containerized Tests
+    experience:
+      - company: ShipBob
+        position: Staff Software Engineer
+        date: 2022-2025
+        location: Chicago, IL
+        summary:
+        highlights:
+          - Led team that executed a massive overhaul and rebuild of the identity and access management system using IdentityServer IDP providing OAuth2 and OpenID authentication and authorization; enabling fulfillment center warehouse management to create and manage associate workers' logins without time consuming IT tickets; enabling the company to scale from a few dozen fulfillment centers to hundreds and beyond without being bottlenecked by IT provisioning of accounts.
+          - Architected and built fulfillment center shipment service to track and manage shipping orders using high speed data streaming and event ingestion technologies including Event Hub (Kafka compatible) and Service Bus to modernize shipment data handling, decouple from the legacy monolith and enable tenantization and sharding of services.
+          - Built the technology enabling all engineering department teams to embed micro frontends (MFE) in the iOS app while securely transferring API access from iOS to MFE for seamless single sign-on.
+      - company: ShipBob
+        position: Senior Software Engineer
+        date: 2018-2022
+        location: Chicago, IL
+        summary:
+        highlights:
+          - Led team that built a new App Marketplace using OAuth 2.0, Developer API, and integration with an iPaaS, and developed 6 new App Marketplace integrations with eCommerce storefronts.
+          - Developed and maintained access control systems using IdentityServer, OAuth 2.0 to secure access to Developer API.
+          - Developed and documented many of the API endpoints in [ShipBob Developer API](https://developer.shipbob.com/), and designed and built the developer API documentation system that collates OpenAPI documents from multiple microservices into a single reference site.
+      - company: The Nerdery
+        position: Software Engineer
+        date: 2015-2018
+        location: Chicago, IL
+        summary:
+        highlights:
+          - Built and delivered custom web and desktop applications for enterprise and nationally recognized private clients in a fast-paced consulting environment.
+          - Worked directly with client stakeholders to define requirements, estimate effort, and implement maintainable, scalable solutions on .NET and SQL Server.
+    education:
+      - institution: Rochester Institute of Technology
+        area: Computer Science
+        degree: Bachelor of Science
+        location: Rochester, NY
+        highlights:
+          - Minor in Mathematics
+design:
+  theme: sb2nov
+  # page:
+  #   size: us-letter
+  #   top_margin: 0.7in
+  #   bottom_margin: 0.7in
+  #   left_margin: 0.7in
+  #   right_margin: 0.7in
+  #   show_footer: true
+  #   show_top_note: true
+  # colors:
+  #   body: rgb(0, 0, 0)
+  #   name: rgb(0, 0, 0)
+  #   headline: rgb(0, 0, 0)
+  #   connections: rgb(0, 0, 0)
+  #   section_titles: rgb(0, 0, 0)
+  #   links: rgb(0, 0, 0)
+  #   footer: rgb(128, 128, 128)
+  #   top_note: rgb(128, 128, 128)
+  # typography:
+  #   line_spacing: 0.6em
+  #   alignment: justified
+  #   date_and_location_column_alignment: right
+  #   font_family:
+  #     body: New Computer Modern
+  #     name: New Computer Modern
+  #     headline: New Computer Modern
+  #     connections: New Computer Modern
+  #     section_titles: New Computer Modern
+  #   font_size:
+  #     body: 10pt
+  #     name: 30pt
+  #     headline: 10pt
+  #     connections: 10pt
+  #     section_titles: 1.4em
+  #   small_caps:
+  #     name: false
+  #     headline: false
+  #     connections: false
+  #     section_titles: false
+  #   bold:
+  #     name: true
+  #     headline: false
+  #     connections: false
+  #     section_titles: true
+  # links:
+  #   underline: true
+  #   show_external_link_icon: false
+  # header:
+  #   alignment: center
+  #   photo_width: 3.5cm
+  #   photo_position: left
+  #   photo_space_left: 0.4cm
+  #   photo_space_right: 0.4cm
+  #   space_below_name: 0.7cm
+  #   space_below_headline: 0.7cm
+  #   space_below_connections: 0.7cm
+  #   connections:
+  #     phone_number_format: national
+  #     hyperlink: true
+  #     show_icons: false
+  #     display_urls_instead_of_usernames: true
+  #     separator: *
+  #     space_between_connections: 0.5cm
+  # section_titles:
+  #   type: with_full_line
+  #   line_thickness: 0.5pt
+  #   space_above: 0.5cm
+  #   space_below: 0.3cm
+  # sections:
+  #   allow_page_break: true
+  #   space_between_regular_entries: 1.2em
+  #   space_between_text_based_entries: 0.3em
+  #   show_time_spans_in: []
+  # entries:
+  #   date_and_location_width: 4.15cm
+  #   side_space: 0.2cm
+  #   space_between_columns: 0.1cm
+  #   allow_page_break: false
+  #   short_second_row: false
+  #   summary:
+  #     space_above: 0cm
+  #     space_left: 0cm
+  #   highlights:
+  #     bullet: ?
+  #     nested_bullet: ?
+  #     space_left: 0.15cm
+  #     space_above: 0cm
+  #     space_between_items: 0cm
+  #     space_between_bullet_and_text: 0.5em
+  # templates:
+  #   footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
+  #   top_note: '*LAST_UPDATED CURRENT_DATE*'
+  #   single_date: MONTH_ABBREVIATION YEAR
+  #   date_range: START_DATE - END_DATE
+  #   time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+  #   one_line_entry:
+  #     main_column: '**LABEL:** DETAILS'
+  #   education_entry:
+  #     main_column: |-
+  #       **INSTITUTION**
+  #       *DEGREE* *in* *AREA*
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     degree_column:
+  #     date_and_location_column: |-
+  #       *LOCATION*
+  #       *DATE*
+  #   normal_entry:
+  #     main_column: |-
+  #       **NAME**
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       *LOCATION*
+  #       *DATE*
+  #   experience_entry:
+  #     main_column: |-
+  #       **POSITION**
+  #       *COMPANY*
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       *LOCATION*
+  #       *DATE*
+  #   publication_entry:
+  #     main_column: |-
+  #       **TITLE**
+  #       SUMMARY
+  #       AUTHORS
+  #       URL (JOURNAL)
+  #     date_and_location_column: DATE
+locale:
+  language: english
+  # last_updated: Last updated in
+  # month: month
+  # months: months
+  # year: year
+  # years: years
+  # present: present
+  # month_abbreviations:
+  #   - Jan
+  #   - Feb
+  #   - Mar
+  #   - Apr
+  #   - May
+  #   - June
+  #   - July
+  #   - Aug
+  #   - Sept
+  #   - Oct
+  #   - Nov
+  #   - Dec
+  # month_names:
+  #   - January
+  #   - February
+  #   - March
+  #   - April
+  #   - May
+  #   - June
+  #   - July
+  #   - August
+  #   - September
+  #   - October
+  #   - November
+  #   - December
+settings:
+  current_date: '2026-02-09'
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
+  bold_keywords: []
