@@ -28,7 +28,8 @@ cv:
     experience:
       - company: ShipBob
         position: Staff Software Engineer
-        date: 2022-2025
+        start_date: 2022-11
+        end_date: 2025-10
         location: Chicago, IL
         summary:
         highlights:
@@ -37,7 +38,8 @@ cv:
           - Built the technology enabling all engineering department teams to embed micro frontends (MFE) in the iOS app while securely transferring API access from iOS to MFE for seamless single sign-on.
       - company: ShipBob
         position: Senior Software Engineer
-        date: 2018-2022
+        start_date: 2018-12
+        end_date: 2022-11
         location: Chicago, IL
         summary:
         highlights:
@@ -46,7 +48,8 @@ cv:
           - Developed and documented many of the API endpoints in [ShipBob Developer API](https://developer.shipbob.com/), and designed and built the developer API documentation system that collates OpenAPI documents from multiple microservices into a single reference site.
       - company: The Nerdery
         position: Software Engineer
-        date: 2015-2018
+        start_date: 2015-11
+        end_date: 2018-10
         location: Chicago, IL
         summary:
         highlights:
