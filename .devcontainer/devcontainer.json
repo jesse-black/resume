@@ -28,6 +28,16 @@
 				"mathematic.vscode-pdf",
 				"ms-azuretools.vscode-containers"
 			]
+		},
+		"settings": {
+			"yaml.schemas": {
+				"https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json": [
+					"*.rendercv.yaml",
+					"cv.yaml"
+				]
+			},
+			"yaml.validate": true,
+			"yaml.hover": true
 		}
 	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
