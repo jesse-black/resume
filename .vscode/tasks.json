@@ -22,7 +22,10 @@
         ]
       },
       "isBackground": true,
-      "problemMatcher": []
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
     },
     {
       "label": "RenderCV: Build Resume PDF",
@@ -30,7 +33,7 @@
       "command": "bash",
       "args": [
         "-lc",
-        "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_CV.pdf Jesse_Black_CV.pdf"
+        "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_Resume.pdf Jesse_Black_Resume.pdf && cp -f rendercv_output/Jesse_Black_Resume.md README.md"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -45,7 +48,7 @@
           "-e",
           "bash",
           "-lc",
-          "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_CV.pdf Jesse_Black_CV.pdf"
+          "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_Resume.pdf Jesse_Black_Resume.pdf && cp -f rendercv_output/Jesse_Black_Resume.md README.md"
         ]
       },
       "problemMatcher": []
