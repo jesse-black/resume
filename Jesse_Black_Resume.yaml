@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: Jesse Black
-  headline: Staff Software Engineer
+  headline: Staff Software Engineer | Technical Founder
   location: Chicago, IL
   email: jesse.w.black@gmail.com
   photo:
@@ -16,7 +16,7 @@ cv:
   sections:
     skills:
       - label: Identity & Security
-        details: OAuth2, OpenID, Single Sign-On (SSO), Identity Provider (IdP), Identity and Access Management, Access Control Systems
+        details: OAuth2, OpenID, Single Sign-On (SSO), Identity Provider (IdP), Identity and Access Management, Role Based Access Control (RBAC)
       - label: Cloud & Platform
         details: Azure Cloud Platform (Event Hub/Kafka, Service Bus, Functions, Blob Storage), Amazon Web Services (Lambda, S3), Terraform, Docker, Microservices, Platform Integration, iPaaS Integration, App Marketplace
       - label: APIs & Data
@@ -28,6 +28,17 @@ cv:
       - label: Methodology
         details: Agile Development, Test Driven Development, Containerized Tests
     experience:
+      - company: Vibramind LLC
+        position: Technical Founder
+        start_date: 2025-10
+        end_date: present
+        location: Chicago, IL
+        summary:
+        highlights:
+          - Founded and built Voicer, an accessibility-first communication app for Deaf professionals, combining real-time speech-to-text transcription (STT) for listening with high-quality text-to-speech synthesis (TTS) for speaking.
+          - Built saved responses and prototyped large language model (LLM)-powered smart replies, including one-tap playback, designed context-aware rewrites to fit the current conversation, and predictive suggestions based on partial input and conversation history.
+          - Implemented an Agentic Engineering workflow using AI coding agents with hardened dev/test sandboxes (Dev Containers, Testcontainers) and automated pull request (PR) quality-gate feedback loops for agent-generated changes.
+          - Bootstrapped a secure cloud stack on a self-funded budget using infrastructure as code (IaC) with Terraform, Microsoft Entra External ID for identity, and Azure SQL, optimizing for low burn during development while designing for scale at launch.
       - company: ShipBob
         position: Staff Software Engineer
         start_date: 2022-11

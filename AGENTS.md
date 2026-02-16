@@ -1,4 +1,4 @@
-﻿# AGENTS.md
+# AGENTS.md
 
 This repository contains my resume built with RenderCV.
 These instructions apply to all tasks in this repository unless the user explicitly overrides them.
