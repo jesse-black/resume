@@ -15,18 +15,18 @@ cv:
   custom_connections:
   sections:
     skills:
+      - label: Agentic Engineering & Quality
+        details: AI Coding Agents (Codex, Jules), PR Quality Gates, CI/CD, End-to-End Automated Testing, Dev Containers, Testcontainers
       - label: Identity & Security
         details: OAuth2, OpenID, Single Sign-On (SSO), Identity Provider (IdP), Identity and Access Management, Role Based Access Control (RBAC)
-      - label: Cloud & Platform
-        details: Azure Cloud Platform (Event Hub/Kafka, Service Bus, Functions, Blob Storage), Amazon Web Services (Lambda, S3), Terraform, Docker, Microservices, Platform Integration, iPaaS Integration, App Marketplace
-      - label: APIs & Data
-        details: JSON REST API Architecture, Public Developer API, OpenAPI / Swagger API Documentation, Distributed Event Streaming
-      - label: Languages & Frameworks
-        details: C# .NET, SQL, Node.js, Java, Kotlin, Python, Typescript, Javascript, React, Vue, Micro Frontends (MFE), Sass, Tailwind
-      - label: Databases
-        details: MS SQL Server, SQLite, Redis
-      - label: Methodology
-        details: Agile Development, Test Driven Development, Containerized Tests
+      - label: Platform & Eventing
+        details: Azure Cloud Platform, Terraform, Docker, Event-Driven Architecture (Event Hub/Kafka, Service Bus), Distributed Event Streaming
+      - label: Ecommerce Integrations
+        details: App Marketplace, OAuth App Marketplace Integrations, Public Developer API, Shopify, WooCommerce
+      - label: Backend
+        details: Distributed Systems, Microservices, REST APIs, C# .NET, Node.js, SQL (SQL Server), Redis
+      - label: Frontend
+        details: TypeScript, JavaScript, React, Micro Frontends (MFE), Tailwind
     experience:
       - company: Vibramind LLC
         position: Technical Founder
@@ -49,6 +49,7 @@ cv:
           - Led team that executed a massive overhaul and rebuild of the identity and access management system using IdentityServer IDP providing OAuth2 and OpenID authentication and authorization; enabling fulfillment center warehouse management to create and manage associate workers' logins without time consuming IT tickets; enabling the company to scale from a few dozen fulfillment centers to hundreds and beyond without being bottlenecked by IT provisioning of accounts.
           - Architected and built fulfillment center shipment service to track and manage shipping orders using high speed data streaming and event ingestion technologies including Event Hub (Kafka compatible) and Service Bus to modernize shipment data handling, decouple from the legacy monolith and enable tenantization and sharding of services.
           - Built the technology enabling all engineering department teams to embed micro frontends (MFE) in the iOS app while securely transferring API access from iOS to MFE for seamless single sign-on.
+          - Mentored two Senior Software Engineers to Staff level.
       - company: ShipBob
         position: Senior Software Engineer
         start_date: 2018-12
@@ -56,9 +57,11 @@ cv:
         location: Chicago, IL
         summary:
         highlights:
-          - Led team that built a new App Marketplace using OAuth 2.0, Developer API, and integration with an iPaaS, and developed 6 new App Marketplace integrations with eCommerce storefronts.
+          - Led team that built a new App Marketplace using OAuth 2.0, Developer API, and integration with an iPaaS, and developed 6 new App Marketplace integrations with eCommerce storefronts (including Walmart and Wix).
+          - Introduced automated code-quality gates (SonarQube) on the App Marketplace team and enforced 80% test coverage across the team's portfolio, achieving the highest overall test coverage in the engineering organization.
           - Developed and maintained access control systems using IdentityServer, OAuth 2.0 to secure access to Developer API.
           - Developed and documented many of the API endpoints in [ShipBob Developer API](https://developer.shipbob.com/), and designed and built the developer API documentation system that collates OpenAPI documents from multiple microservices into a single reference site.
+          - Held weekly one-on-ones with engineers on the App Marketplace team to support execution and career development.
       - company: The Nerdery
         position: Software Engineer
         start_date: 2015-11
@@ -76,7 +79,7 @@ cv:
         highlights:
           - Minor in Mathematics
 design:
-  theme: sb2nov
+  theme: moderncv
   # page:
   #   size: us-letter
   #   top_margin: 0.7in
