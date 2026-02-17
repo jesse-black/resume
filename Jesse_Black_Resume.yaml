@@ -33,9 +33,9 @@ cv:
         start_date: 2025-10
         end_date: present
         location: Chicago, IL
-        summary:
+        summary: "Technical founder building an accessibility-first, AI-powered communication app with agentic engineering."
         highlights:
-          - Founded and built Voicer, an accessibility-first communication app for Deaf professionals, combining real-time speech-to-text transcription (STT) for listening with high-quality text-to-speech synthesis (TTS) for speaking.
+          - Founded and built an accessibility-first communication app for Deaf professionals, combining real-time speech-to-text transcription (STT) for listening with high-quality text-to-speech synthesis (TTS) for speaking.
           - Built saved responses and prototyped large language model (LLM)-powered smart replies, including one-tap playback, designed context-aware rewrites to fit the current conversation, and predictive suggestions based on partial input and conversation history.
           - Implemented an Agentic Engineering workflow using AI coding agents with hardened dev/test sandboxes (Dev Containers, Testcontainers) and automated pull request (PR) quality-gate feedback loops for agent-generated changes.
           - Bootstrapped a secure cloud stack on a self-funded budget using infrastructure as code (IaC) with Terraform, Microsoft Entra External ID for identity, and Azure SQL, optimizing for low burn during development while designing for scale at launch.
@@ -44,33 +44,42 @@ cv:
         start_date: 2022-11
         end_date: 2025-10
         location: Chicago, IL
-        summary:
+        summary: "Staff engineer building distributed event-driven shipment services and secure iOS micro frontend integration for fulfillment operations at scale."
         highlights:
-          - Led team that executed a massive overhaul and rebuild of the identity and access management system using IdentityServer IDP providing OAuth2 and OpenID authentication and authorization; enabling fulfillment center warehouse management to create and manage associate workers' logins without time consuming IT tickets; enabling the company to scale from a few dozen fulfillment centers to hundreds and beyond without being bottlenecked by IT provisioning of accounts.
-          - Architected and built fulfillment center shipment service to track and manage shipping orders using high speed data streaming and event ingestion technologies including Event Hub (Kafka compatible) and Service Bus to modernize shipment data handling, decouple from the legacy monolith and enable tenantization and sharding of services.
-          - Built the technology enabling all engineering department teams to embed micro frontends (MFE) in the iOS app while securely transferring API access from iOS to MFE for seamless single sign-on.
+          - Architected and built a fulfillment center shipment service to track and manage shipping orders.
+          - Modernized shipping order ingestion using Event Hub (Kafka-compatible) and Service Bus to decouple from the monolith and enable tenantization and sharding.
+          - Enabled all engineering teams to embed micro frontends (MFE) in the iOS app.
+          - Implemented secure token transfer to enable seamless single sign-on (SSO) from iOS into embedded MFEs.
+          - Strengthened CI/CD quality gates, adding containerized integration testing (Docker) and local database tests to improve end-to-end reliability.
           - Mentored two Senior Software Engineers to Staff level.
       - company: ShipBob
         position: Senior Software Engineer
         start_date: 2018-12
         end_date: 2022-11
         location: Chicago, IL
-        summary:
+        summary: "Senior engineer leading the IAM overhaul and App Marketplace developer platform, raising the engineering quality bar with automated gates."
         highlights:
-          - Led team that built a new App Marketplace using OAuth 2.0, Developer API, and integration with an iPaaS, and developed 6 new App Marketplace integrations with eCommerce storefronts (including Walmart and Wix).
-          - Introduced automated code-quality gates (SonarQube) on the App Marketplace team and enforced 80% test coverage across the team's portfolio, achieving the highest overall test coverage in the engineering organization.
+          - Led team that overhauled and rebuilt the identity and access management (IAM) system using IdentityServer for OAuth2 and OpenID Connect (OIDC).
+          - Enabled fulfillment center managers to create and manage associate logins without time-consuming IT tickets.
+          - Removed IT-ticket-based user provisioning as a scaling bottleneck as ShipBob grew from dozens of fulfillment centers to hundreds.
+          - Led team that built a new App Marketplace using OAuth 2.0, a public Developer API, and integration with an iPaaS.
+          - Held weekly one-on-ones with engineers on the App Marketplace and IAM teams to support execution and career development.
+          - Delivered 6 app marketplace integrations with ecommerce storefronts (including Walmart and Wix).
+          - Introduced automated code-quality gates (SonarQube) on the App Marketplace team and enforced minimum 80% test coverage across the team's portfolio, achieving the highest overall test coverage in the engineering organization.
+          - Drove early adoption of C# 8 nullable reference types across the engineering organization, raising baseline code safety in new services.
           - Developed and maintained access control systems using IdentityServer, OAuth 2.0 to secure access to Developer API.
-          - Developed and documented many of the API endpoints in [ShipBob Developer API](https://developer.shipbob.com/), and designed and built the developer API documentation system that collates OpenAPI documents from multiple microservices into a single reference site.
-          - Held weekly one-on-ones with engineers on the App Marketplace team to support execution and career development.
+          - Developed and documented many endpoints in the [ShipBob Developer API](https://developer.shipbob.com/).
+          - Built the Developer API documentation system that aggregates OpenAPI specifications from multiple microservices into a single reference site.
       - company: The Nerdery
         position: Software Engineer
         start_date: 2015-11
         end_date: 2018-10
         location: Chicago, IL
-        summary:
+        summary: "Digital consultancy engineer delivering custom .NET applications for enterprise clients."
         highlights:
           - Built and delivered custom web and desktop applications for enterprise and nationally recognized private clients in a fast-paced consulting environment.
           - Worked directly with client stakeholders to define requirements, estimate effort, and implement maintainable, scalable solutions on .NET and SQL Server.
+          - Deployed and supported .NET applications on Azure, including API and CMS-based solutions.
     education:
       - institution: Rochester Institute of Technology
         area: Computer Science
@@ -79,7 +88,7 @@ cv:
         highlights:
           - Minor in Mathematics
 design:
-  theme: moderncv
+  theme: engineeringclassic
   # page:
   #   size: us-letter
   #   top_margin: 0.7in
