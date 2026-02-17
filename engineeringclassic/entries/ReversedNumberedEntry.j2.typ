@@ -1,0 +1,2 @@
++ {{entry.reversed_number}}
+

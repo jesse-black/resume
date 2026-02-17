@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: Jesse Black
-  headline: Staff Software Engineer | Technical Founder
+  headline: Technical Founder | Staff Software Engineer 
   location: Chicago, IL
   email: jesse.w.black@gmail.com
   photo:
@@ -14,19 +14,22 @@ cv:
       username: jesse-black
   custom_connections:
   sections:
+    summary:
+      - I build secure agentic development pipelines, backed by production-grade authN/authZ and rigorous engineering quality gates.
+      # - I build secure agentic development pipelines, backed by IAM/RBAC and rigorous engineering quality gates.
     skills:
       - label: Agentic Engineering & Quality
-        details: AI Coding Agents (Codex, Jules), PR Quality Gates, CI/CD, End-to-End Automated Testing, Dev Containers, Testcontainers
+        details: AI Coding Agents (Codex, Jules), PR gates, CI/CD, E2E testing, Dev Containers, Testcontainers
       - label: Identity & Security
-        details: OAuth2, OpenID, Single Sign-On (SSO), Identity Provider (IdP), Identity and Access Management, Role Based Access Control (RBAC)
+        details: AuthN/AuthZ, OAuth2/OIDC, SSO, IdP, IAM, RBAC
       - label: Platform & Eventing
-        details: Azure Cloud Platform, Terraform, Docker, Event-Driven Architecture (Event Hub/Kafka, Service Bus), Distributed Event Streaming
+        details: Azure, Terraform, Docker, event-driven systems (Event Hub/Kafka, Service Bus)
       - label: Ecommerce Integrations
-        details: App Marketplace, OAuth App Marketplace Integrations, Public Developer API, Shopify, WooCommerce
+        details: App marketplace, OAuth apps, public developer API, Shopify, WooCommerce
       - label: Backend
-        details: Distributed Systems, Microservices, REST APIs, C# .NET, Node.js, SQL (SQL Server), Redis
+        details: Distributed systems, REST APIs, C#/.NET, Node.js, SQL Server, Redis
       - label: Frontend
-        details: TypeScript, JavaScript, React, Micro Frontends (MFE), Tailwind
+        details: TypeScript, React, micro frontends (MFE), Tailwind
     experience:
       - company: Vibramind LLC
         position: Technical Founder
@@ -48,8 +51,7 @@ cv:
         highlights:
           - Architected and built a fulfillment center shipment service to track and manage shipping orders.
           - Modernized shipping order ingestion using Event Hub (Kafka-compatible) and Service Bus to decouple from the monolith and enable tenantization and sharding.
-          - Enabled all engineering teams to embed micro frontends (MFE) in the iOS app.
-          - Implemented secure token transfer to enable seamless single sign-on (SSO) from iOS into embedded MFEs.
+          - Enabled all engineering teams to embed micro frontends (MFE) in the iOS app with secure token transfer to enable seamless single sign-on (SSO).
           - Strengthened CI/CD quality gates, adding containerized integration testing (Docker) and local database tests to improve end-to-end reliability.
           - Mentored two Senior Software Engineers to Staff level.
       - company: ShipBob
@@ -57,7 +59,7 @@ cv:
         start_date: 2018-12
         end_date: 2022-11
         location: Chicago, IL
-        summary: "Senior engineer leading the IAM overhaul and App Marketplace developer platform, raising the engineering quality bar with automated gates."
+        summary: "Senior engineer leading the IAM overhaul and App Marketplace integrations platform, raising the engineering quality bar with automated gates."
         highlights:
           - Led team that overhauled and rebuilt the identity and access management (IAM) system using IdentityServer for OAuth2 and OpenID Connect (OIDC).
           - Enabled fulfillment center managers to create and manage associate logins without time-consuming IT tickets.
@@ -87,6 +89,8 @@ cv:
         location: Rochester, NY
         highlights:
           - Minor in Mathematics
+    footer:
+      - Learn more about how and why this resume is built in [ABOUT.md](ABOUT.md)
 design:
   theme: engineeringclassic
   # page:

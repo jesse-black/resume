@@ -1,0 +1,2 @@
+- {{entry.bullet}}
+
