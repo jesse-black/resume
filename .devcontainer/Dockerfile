@@ -1,22 +1,22 @@
 FROM mcr.microsoft.com/devcontainers/base:trixie
 
-# 1. Install Python and dependencies for Oh My Posh
-# Note: git, sudo, and ca-certificates are already in this base image.
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    pipx \
+    jq \
+    poppler-utils \
+    python-is-python3 \
     python3 \
-    python3-pip \
     unzip \
     vim \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Oh My Posh Installation
-RUN curl -s https://ohmyposh.dev/install.sh | bash -s -- -d /usr/local/bin
+ENV PATH="/root/.local/bin:${PATH}"
 
-# 3. Switch to 'vscode' user
 USER vscode
 
-# 4. Shell Configuration
-RUN printf '\n# oh-my-posh\nif command -v oh-my-posh >/dev/null 2>&1; then\n  eval "$(oh-my-posh init bash --config jandedobbeleer)"\nfi\n' >> ~/.bashrc
+RUN pipx install "rendercv[full]==2.8.0"
 
-# 5. RenderCV Installation
-RUN pip install "rendercv[full]" --break-system-packages
+RUN curl -fsSL -o /tmp/nix-install "https://releases.nixos.org/nix/nix-2.34.3/install" \
+    && echo "15af988e88ffc16d5d4abd6e1d100eba8b0dff6a41c6e03a7718c2b4a87e0cd6  /tmp/nix-install" | sha256sum -c - \
+    && sh /tmp/nix-install --no-daemon \
+    && rm -f /tmp/nix-install

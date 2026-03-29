@@ -1,2 +1,3 @@
 rendercv_output/
 .notes/
+.devcontainer/home-local.nix
