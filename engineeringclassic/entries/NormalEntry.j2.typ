@@ -12,10 +12,22 @@
 {% endfor %}
   ],
   [
+{% if "github.com" in entry.date_and_location_column and "#link(" in entry.date_and_location_column %}
+{% set github_url = entry.date_and_location_column.split('#link("', 1)[1].split('")', 1)[0] %}
+{% set github_label = entry.date_and_location_column.split(')[', 1)[1].rsplit(']', 1)[0] %}
+    #link("{{ github_url }}", icon: false, if-underline: false, if-color: true)[#connection-with-icon("github")[{{ github_label }}]]
+
+{% else %}
 {% for line in entry.date_and_location_column.splitlines() %}
+{% if "github.com" in line and "#link(" in line %}
+    {{ line|replace('if-color: false', 'if-color: true')|indent(4) }}
+
+{% else %}
     {{ line|indent(4) }}
 
+{% endif %}
 {% endfor %}
+{% endif %}
   ],
 {% if not design.entries.short_second_row %}
   main-column-second-row: [
@@ -26,4 +38,3 @@
   ],
 {% endif %}
 )
-
