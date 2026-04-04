@@ -10,15 +10,19 @@ Technical Founder | Staff Software Engineer
 
 # Summary
 
-I build secure agentic development pipelines, backed by production-grade authN/authZ and rigorous engineering quality gates.
+Building accessible AI communication products and the secure, reliable systems behind them.
 
 # Skills
 
-**Agentic Engineering & Quality:** AI Coding Agents (Codex, Jules), PR gates, CI/CD, E2E testing, Dev Containers, Testcontainers
+**Agentic Engineering & Quality:** AI coding agents (Codex, Gemini CLI, Jules), agent skills, quality gates, E2E testing, Dev Containers
 
 **Identity & Security:** AuthN/AuthZ, OAuth2/OIDC, SSO, IdP, IAM, RBAC
 
-**Platform & Eventing:** Azure, Terraform, Docker, event-driven systems (Event Hub/Kafka, Service Bus)
+**Developer & Agent Tooling:** Rust CLI tools, static analysis, Git diff coverage, documentation tooling
+
+**Cloud & Eventing:** Azure, Terraform, Docker, Podman, event-driven systems (Event Hub/Kafka, Service Bus)
+
+**AI & Speech Integrations:** OpenAI API (GPT models), Azure Speech (speech recognition)
 
 **Ecommerce Integrations:** App marketplace, OAuth apps, public developer API, Shopify, WooCommerce
 
@@ -32,10 +36,10 @@ I build secure agentic development pipelines, backed by production-grade authN/a
 *Oct 2025 – present*
 
 Technical founder building an accessibility-first, AI-powered communication app with agentic engineering.
-- Founded and built an accessibility-first communication app for Deaf professionals, combining real-time speech-to-text transcription (STT) for listening with high-quality text-to-speech synthesis (TTS) for speaking.
-- Built saved responses and prototyped large language model (LLM)-powered smart replies, including one-tap playback, designed context-aware rewrites to fit the current conversation, and predictive suggestions based on partial input and conversation history.
-- Implemented an Agentic Engineering workflow using AI coding agents with hardened dev/test sandboxes (Dev Containers, Testcontainers) and automated pull request (PR) quality-gate feedback loops for agent-generated changes.
-- Bootstrapped a secure cloud stack on a self-funded budget using infrastructure as code (IaC) with Terraform, Microsoft Entra External ID for identity, and Azure SQL, optimizing for low burn during development while designing for scale at launch.
+- Founded and built an accessibility-first communication app for Deaf professionals, combining real-time speech-to-text and text-to-speech.
+- Built saved responses and GPT-powered smart replies with one-tap playback, context-aware rewrites, and predictive suggestions.
+- Implemented an agentic engineering workflow with AI coding agents, hardened dev sandboxes, and automated quality-gate feedback loops.
+- Bootstrapped a secure cloud stack with Terraform, Microsoft Entra External ID, and Azure SQL, optimizing for low burn while designing for scale.
 
 
 ## **Staff Software Engineer**, ShipBob — Chicago, IL
@@ -53,26 +57,33 @@ Staff engineer building distributed event-driven shipment services and secure iO
 *Dec 2018 – Nov 2022*
 
 Senior engineer leading the IAM overhaul and App Marketplace integrations platform, raising the engineering quality bar with automated gates.
-- Led team that overhauled and rebuilt the identity and access management (IAM) system using IdentityServer for OAuth2 and OpenID Connect (OIDC).
-- Enabled fulfillment center managers to create and manage associate logins without time-consuming IT tickets.
-- Removed IT-ticket-based user provisioning as a scaling bottleneck as ShipBob grew from dozens of fulfillment centers to hundreds.
-- Led team that built a new App Marketplace using OAuth 2.0, a public Developer API, and integration with an iPaaS.
-- Held weekly one-on-ones with engineers on the App Marketplace and IAM teams to support execution and career development.
-- Delivered 6 app marketplace integrations with ecommerce storefronts (including Walmart and Wix).
+- Served as lead engineer for the IAM and App Marketplace teams, driving architecture, execution, and engineer growth through weekly one-on-ones.
+- Led the IAM rebuild using IdentityServer for OAuth2 and OpenID Connect (OIDC).
+- Enabled fulfillment center managers to create and manage associate logins directly, eliminating IT-ticket-based provisioning as a scaling bottleneck as ShipBob scaled to hundreds of fulfillment centers.
+- Led the new App Marketplace with OAuth 2.0, a public Developer API, and iPaaS integration.
+- Delivered 6 App Marketplace integrations, including Walmart and Wix.
 - Introduced automated code-quality gates (SonarQube) on the App Marketplace team and enforced minimum 80% test coverage across the team's portfolio, achieving the highest overall test coverage in the engineering organization.
-- Drove early adoption of C# 8 nullable reference types across the engineering organization, raising baseline code safety in new services.
-- Developed and maintained access control systems using IdentityServer, OAuth 2.0 to secure access to Developer API.
-- Developed and documented many endpoints in the [ShipBob Developer API](https://developer.shipbob.com/).
-- Built the Developer API documentation system that aggregates OpenAPI specifications from multiple microservices into a single reference site.
+- Drove early adoption of C# 8 nullable reference types across the engineering org.
+- Implemented and documented many [ShipBob Developer API](https://developer.shipbob.com/) endpoints, and built the docs system aggregating OpenAPI specs across microservices.
 
 
 ## **Software Engineer**, The Nerdery — Chicago, IL
 *Nov 2015 – Oct 2018*
 
 Digital consultancy engineer delivering custom .NET applications for enterprise clients.
-- Built and delivered custom web and desktop applications for enterprise and nationally recognized private clients in a fast-paced consulting environment.
-- Worked directly with client stakeholders to define requirements, estimate effort, and implement maintainable, scalable solutions on .NET and SQL Server.
-- Deployed and supported .NET applications on Azure, including API and CMS-based solutions.
+- Built custom web and desktop applications for enterprise clients in a fast-paced consulting environment.
+- Worked with client stakeholders to define requirements and deliver .NET/SQL Server solutions.
+
+
+# Projects
+
+## **covgate**
+*[jesse-black/covgate](https://github.com/jesse-black/covgate)*
+
+Open-source Rust CLI for Git diff coverage gates in CI and coding-agent workflows.
+- Built native coverage parsing across Rust, JavaScript/TypeScript, and .NET to gate pull request diffs without relying on lossy legacy formats.
+- Added branch, region, and function diff gates alongside line coverage for more precise enforcement on changed code.
+- Built local diff-gate checks for Codex Cloud and Google Jules task environments, shortening feedback loops for agent-driven development.
 
 
 # Education
