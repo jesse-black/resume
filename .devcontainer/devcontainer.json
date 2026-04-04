@@ -33,8 +33,5 @@
 			"yaml.validate": true,
 			"yaml.hover": true
 		}
-	},
-	"mounts": [
-		"source=${localWorkspaceFolder}/.notes,target=${containerWorkspaceFolder}/.notes,type=bind"
-	]
+	}
 }
