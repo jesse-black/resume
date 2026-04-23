@@ -14,7 +14,7 @@ Building accessible AI communication products and the secure, reliable systems b
 
 # Skills
 
-**Agentic Engineering & Quality:** AI coding agents (Codex, Gemini CLI, Jules), agent skills, quality gates, E2E testing, Dev Containers
+**Agentic Engineering & Quality:** AI coding agents (Claude Code, Codex, Gemini CLI), agent skills, quality gates, E2E testing, Dev Containers
 
 **Identity & Security:** AuthN/AuthZ, OAuth2/OIDC, SSO, IdP, IAM, RBAC
 
@@ -77,13 +77,23 @@ Digital consultancy engineer delivering custom .NET applications for enterprise 
 
 # Projects
 
+## **docgarden**
+*[jesse-black/docgarden](https://github.com/jesse-black/docgarden)*
+
+Open-source Rust CLI for repository knowledge systems in agentic engineering repos.
+- Optimized agent token efficiency and made context cheaper by making repository knowledge self-routing.
+- Designed BM25F ranked retrieval over repository metadata so agents could find the right plans, skills, and design docs without oversized instruction files.
+- Codified repository knowledge standards into deterministic checks for document metadata and token limits on high-traffic files like `AGENTS.md`.
+
+
 ## **covgate**
 *[jesse-black/covgate](https://github.com/jesse-black/covgate)*
 
 Open-source Rust CLI for Git diff coverage gates in CI and coding-agent workflows.
-- Built native coverage parsing across Rust, JavaScript/TypeScript, and .NET to gate pull request diffs without relying on lossy legacy formats.
+- Built a coverage gate that prevents untested code from merging by evaluating only the lines changed in a pull request.
+- Supported Rust, JavaScript/TypeScript, and .NET coverage workflows so teams can apply the same quality gate across multiple stacks.
 - Added branch, region, and function diff gates alongside line coverage for more precise enforcement on changed code.
-- Built local diff-gate checks for Codex Cloud and Google Jules task environments, shortening feedback loops for agent-driven development.
+- Enabled local diff-gate checks for Codex Cloud and Google Jules task environments, shortening feedback loops for shallow-checkout cloud agent sandboxes.
 
 
 # Education
