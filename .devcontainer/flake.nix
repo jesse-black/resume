@@ -24,10 +24,21 @@
       homeConfigurations.vscode = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home.nix
+          ({ ... }: {
+            home.username = "vscode";
+            home.homeDirectory = "/home/vscode";
+            home.stateVersion = "23.11";
+            programs.home-manager.enable = true;
+          })
           ({ pkgs, ... }: {
             home.packages = with pkgs; [
               yq-go
+              jq
+              poppler-utils
+              python3
+              unzip
+              vim
+              rendercv
             ];
           })
         ] ++ localModules;
