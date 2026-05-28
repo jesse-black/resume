@@ -18,7 +18,7 @@ cv:
       - Building accessible AI communication products and the secure, reliable systems behind them.
     skills:
       - label: Agentic Engineering & Quality
-        details: AI coding agents (Claude Code, Codex, Gemini CLI), agent skills, quality gates, E2E testing, Dev Containers
+        details: AI coding agents (Claude Code, Codex, OpenCode, Antigravity CLI), agent skills, quality gates, E2E testing, Dev Containers
       - label: Identity & Security
         details: AuthN/AuthZ, OAuth2/OIDC, SSO, IdP, IAM, RBAC
       - label: Developer & Agent Tooling
