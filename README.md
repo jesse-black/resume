@@ -11,11 +11,9 @@ Technical Founder | Staff Software Engineer
 
 
 # Summary
-
 Building accessible AI communication products and the secure, reliable systems behind them.
 
 # Skills
-
 **AI Coding Agents:** Claude Code, Codex, OpenCode, Antigravity CLI
 
 **Agentic Engineering & Quality:** harness engineering, agent skills, GitHub Actions CI/CD, quality gates, E2E testing, Dev Containers, Nix flakes
@@ -35,7 +33,6 @@ Building accessible AI communication products and the secure, reliable systems b
 **Frontend:** TypeScript, React, micro frontends (MFE), Tailwind
 
 # Experience
-
 ## **Technical Founder**, Vibramind LLC — Chicago, IL
 *Oct 2025 – present*
 
@@ -80,7 +77,6 @@ Digital consultancy engineer delivering custom .NET applications for enterprise 
 
 
 # Projects
-
 ## **docgarden**
 *[jesse-black/docgarden](https://github.com/jesse-black/docgarden)*
 
@@ -101,7 +97,6 @@ Open-source Rust CLI for Git diff coverage gates in GitHub Actions CI and coding
 
 
 # Education
-
 ## **Rochester Institute of Technology**, Bachelor of Science in Computer Science — Rochester, NY
 
 - Minor in Mathematics
