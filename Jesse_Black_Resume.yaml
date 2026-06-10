@@ -3,10 +3,10 @@ cv:
   name: Jesse Black
   headline: Technical Founder | Staff Software Engineer
   location: Chicago, IL
-  email: jesse.w.black@gmail.com
+  email: jesse@jesseblack.net
   photo:
   phone:
-  website:
+  website: https://jesseblack.net
   social_networks:
     - network: LinkedIn
       username: jessewblack
@@ -18,19 +18,19 @@ cv:
       - Building accessible AI communication products and the secure, reliable systems behind them.
     skills:
       - label: Agentic Engineering & Quality
-        details: AI coding agents (Claude Code, Codex, OpenCode, Antigravity CLI), agent skills, quality gates, E2E testing, Dev Containers
+        details: AI coding agents (Claude Code, Codex, OpenCode, Antigravity CLI), agent skills, quality gates, E2E testing, Dev Containers, Nix flakes
       - label: Identity & Security
         details: AuthN/AuthZ, OAuth2/OIDC, SSO, IdP, IAM, RBAC
       - label: Developer & Agent Tooling
         details: Rust CLI tools, static analysis, Git diff coverage, documentation tooling
       - label: Cloud & Eventing
-        details: Azure, Terraform, Docker, Podman, event-driven systems (Event Hub/Kafka, Service Bus)
+        details: Azure, Terraform, OpenTofu, Docker, Podman, event-driven systems (Event Hub/Kafka, Service Bus), observability (OpenTelemetry, Azure Monitor Application Insights)
       - label: AI & Speech Integrations
         details: OpenAI API (GPT models), Azure Speech (speech recognition)
       - label: Ecommerce Integrations
         details: App marketplace, OAuth apps, public developer API, Shopify, WooCommerce
       - label: Backend
-        details: Distributed systems, REST APIs, C#/.NET, Node.js, SQL Server, Redis
+        details: Distributed systems, REST APIs, C#/.NET, Node.js, Python, SQL Server, Redis
       - label: Frontend
         details: TypeScript, React, micro frontends (MFE), Tailwind
     experience:
