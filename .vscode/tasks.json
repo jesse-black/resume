@@ -26,32 +26,6 @@
       "runOptions": {
         "runOn": "folderOpen"
       }
-    },
-    {
-      "label": "RenderCV: Build Resume PDF",
-      "type": "shell",
-      "command": "bash",
-      "args": [
-        "-lc",
-        "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_Resume.pdf Jesse_Black_Resume.pdf && cp -f rendercv_output/Jesse_Black_Resume.md README.md"
-      ],
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "windows": {
-        "command": "wsl.exe",
-        "args": [
-          "-e",
-          "bash",
-          "-lc",
-          "rendercv render Jesse_Black_Resume.yaml && cp -f rendercv_output/Jesse_Black_Resume.pdf Jesse_Black_Resume.pdf && cp -f rendercv_output/Jesse_Black_Resume.md README.md"
-        ]
-      },
-      "problemMatcher": []
     }
   ]
 }
