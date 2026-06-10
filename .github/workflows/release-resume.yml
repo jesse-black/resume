@@ -53,9 +53,8 @@ jobs:
 
       - name: Publish GitHub release
         uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          token: ${{ github.token }}
           name: Resume ${{ github.ref_name }}
           body_path: rendercv_output/Jesse_Black_Resume.md
           generate_release_notes: false
