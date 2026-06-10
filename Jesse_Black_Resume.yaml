@@ -17,14 +17,16 @@ cv:
     summary:
       - Building accessible AI communication products and the secure, reliable systems behind them.
     skills:
+      - label: AI Coding Agents
+        details: Claude Code, Codex, OpenCode, Antigravity CLI
       - label: Agentic Engineering & Quality
-        details: AI coding agents (Claude Code, Codex, OpenCode, Antigravity CLI), agent harness engineering, agent skills, GitHub Actions CI/CD, quality gates, E2E testing, Dev Containers, Nix flakes
+        details: harness engineering, agent skills, GitHub Actions CI/CD, quality gates, E2E testing, Dev Containers, Nix flakes
       - label: Identity & Security
         details: AuthN/AuthZ, OAuth2/OIDC, SSO, IdP, IAM, RBAC
       - label: Developer & Agent Tooling
         details: Rust CLI tools, static analysis, Git diff coverage, documentation tooling
       - label: Cloud & Eventing
-        details: Azure, Terraform, OpenTofu, Docker, Podman, event-driven systems (Event Hub/Kafka, Service Bus), observability (OpenTelemetry, Azure Monitor Application Insights)
+        details: Azure, Terraform, OpenTofu, Docker, Podman, Event Hub (Kafka-compatible), Service Bus, OpenTelemetry, Azure Monitor Application Insights
       - label: AI & Speech Integrations
         details: OpenAI API (GPT models), Azure Speech (speech recognition)
       - label: Ecommerce Integrations
