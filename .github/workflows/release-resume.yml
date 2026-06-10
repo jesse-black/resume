@@ -34,6 +34,18 @@ jobs:
       - name: Render resume
         run: rendercv render Jesse_Black_Resume.yaml
 
+      - name: Update checked-in resume outputs
+        run: |
+          cp rendercv_output/Jesse_Black_Resume.pdf Jesse_Black_Resume.pdf
+          python3 .github/scripts/update_readme.py
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md Jesse_Black_Resume.pdf
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update rendered resume [skip ci]"
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
+
       - name: Prepare release asset
         run: |
           cp rendercv_output/Jesse_Black_Resume.pdf \
@@ -43,6 +55,7 @@ jobs:
         uses: softprops/action-gh-release@1853d73993c8ca1b2c9c1a7fede39682d0ab5c2a # v2.5.3
         with:
           name: Resume ${{ github.ref_name }}
+          body_path: rendercv_output/Jesse_Black_Resume.md
           generate_release_notes: false
           fail_on_unmatched_files: true
           files: rendercv_output/Jesse_Black_Resume-${{ github.ref_name }}.pdf

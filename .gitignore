@@ -2,3 +2,5 @@ rendercv_output/
 .notes/
 .devcontainer/home-local.nix
 *.local.json
+__pycache__/
+*.pyc

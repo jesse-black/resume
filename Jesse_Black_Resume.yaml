@@ -106,8 +106,6 @@ cv:
         location: Rochester, NY
         highlights:
           - Minor in Mathematics
-    footer:
-      - Learn more about how and why this resume is built in [ABOUT.md](ABOUT.md)
 design:
   theme: engineeringclassic
   entries:
