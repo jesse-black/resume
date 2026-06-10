@@ -6,17 +6,15 @@ These instructions apply to all tasks in this repository unless the user explici
 ## Project Overview
 - The source content lives in `Jesse_Black_Resume.yaml`.
 - Template overrides (source) live in `engineeringclassic/` (Typst/PDF) and `markdown/` (Markdown).
-- A collection of markdown notes providing background context for drafting resume sections lives in `.notes/`.
-- Follow `.notes/README.md` for how notes should be interpreted and used in drafting tasks.
 - Use RenderCV to render/export the resume from this YAML source.
 
 ## Notes for Agents
 - Edit source files only (primarily `Jesse_Black_Resume.yaml`, plus `engineeringclassic/` and `markdown/` when adjusting layout).
 - Do not edit generated outputs under `rendercv_output/`.
-- Do not stage or commit files from `.notes/`.
 - Keep formatting consistent with existing YAML structure.
 - If you add new sections, follow the patterns already used in the YAML files.
 - Always check for existing files before creating or overwriting any file.
+- Target is two full pages.
 
 ## Validation
 - Validate by rendering: `rendercv render Jesse_Black_Resume.yaml`.
